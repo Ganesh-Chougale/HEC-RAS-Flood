@@ -1,0 +1,15 @@
+# Core Flask application
+Flask==2.3.3 # A stable release from the 2.x series
+
+# DSS File Processing
+pydsstools==2.3.1
+pandas==2.1.4 # A recent, stable version for data manipulation
+
+# Database Interaction
+Flask-SQLAlchemy==3.1.1 # Latest stable release for SQLAlchemy integration
+PyMySQL==1.1.0 # Compatible MySQL driver
+
+# Utility & Deployment
+python-dotenv==1.0.0 # For environment variable management
+waitress==2.1.2 # Production-ready WSGI server for Windows/cross-platform
+APScheduler==3.10.4 # For future automated alert scheduling (if implemented)
