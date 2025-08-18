@@ -5,4 +5,5 @@ PyMySQL
 python-dotenv
 pandas
 pydss
-# pydsstools
+flask_sqlalchemy
+cryptography
