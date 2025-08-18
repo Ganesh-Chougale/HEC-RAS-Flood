@@ -1,6 +1,6 @@
 ## 1. create backend Environment  
 ```bash
-'/c/Users/RaSkull/AppData/Local/Programs/Python/Python39/python.exe' -m venv venv
+python -m venv venv
 ```  
 2. Activate Environment  
 for bash/WSL:
@@ -18,6 +18,15 @@ venv\Scripts\Activate.ps1
 3. create requirements.txt file  
 ```bash
 touch requirements.txt
+```  
+```txt
+Flask
+Flask-CORS
+SQLAlchemy
+PyMySQL
+python-dotenv
+pandas
+pyds
 ```  
 4. Install requirements  
 ```bash
@@ -61,4 +70,11 @@ WARNING: This is a development server. Do not use it in a production deployment.
 Press CTRL+C to quit
 127.0.0.1 - - [30/Jul/2025 19:09:58] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [30/Jul/2025 19:09:58] "GET /favicon.ico HTTP/1.1" 404 -
+```  
+
+
+```bash
+alias python="./venv/Scripts/python.exe"
+python --version
+source venv/Scripts/activate
 ```  

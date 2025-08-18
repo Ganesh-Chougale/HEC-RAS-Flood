@@ -57,9 +57,9 @@ Focus on building the API and data processing logic.
 **Step 5: DSS File Parsing Module**
 
   * **Action:** Create a dedicated Python module (e.g., `dss_parser.py`) for handling DSS file operations.
-  * **Action:** Implement a function within `dss_parser.py` to read a DSS file using `pydsstools`.
+  * **Action:** Implement a function within `dss_parser.py` to read a DSS file using `pydss`.
       * **Details:** Focus on opening the DSS file, listing its available paths (e.g., `/PANCHGANGA/RAJARAM BRIDGE/FLOW/01JAN2021/1DAY/OBS/`), reading the time-series data for discharge (CMS), and returning it as a Pandas DataFrame or a list of dictionaries/JSON-serializable objects.
-      * **Challenge:** This is where you'll heavily test `pydsstools` with your specific `Rajaram_Bridge_DailyDischarge_2021_July.dss` file. If issues arise, explore the Jython alternative here.
+      * **Challenge:** This is where you'll heavily test `pydss` with your specific `Rajaram_Bridge_DailyDischarge_2021_July.dss` file. If issues arise, explore the Jython alternative here.
   * **Action:** Add error handling for file not found, invalid DSS format, or missing data paths.
   * **Action:** Unit test this module extensively with your sample DSS file.
 

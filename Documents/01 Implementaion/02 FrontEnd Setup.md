@@ -13,8 +13,17 @@ alias (@/*): No
 ## 2. install bootstrap & font awesome  
 ```bash
 cd frontend-next-app/
-npm install bootstrap react-bootstrap
+npm install bootstrap react-bootstrap @fortawesome/fontawesome-free
 npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+```  
+check installation with each command (seperately for less confusion)  
+```bash
+npm list bootstrap
+npm list react-bootstrap
+npm list @fortawesome/fontawesome-free
+npm list @fortawesome/fontawesome-svg-core
+npm list @fortawesome/free-solid-svg-icons
+npm list @fortawesome/react-fontawesome
 ```  
 ## 3. Clean app template  
 App\frontend-next-app\src\app\page.tsx

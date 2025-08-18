@@ -1,8 +1,8 @@
 ```bash
-node Scripts/FileAndFolderSummary.js "App"
+node Essentials/FileAndFolderSummary.js "App"
 ```  
 ```bash
-node Scripts/CodeSummary.js "App"
+node Essentials/CodeSummary.js "App"
 ```  
 ```bash
 git add .
