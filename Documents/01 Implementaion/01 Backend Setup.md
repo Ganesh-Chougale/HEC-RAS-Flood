@@ -27,6 +27,8 @@ PyMySQL
 python-dotenv
 pandas
 pyds
+hecdss
+matplotlib
 ```  
 4. Install requirements  
 ```bash
