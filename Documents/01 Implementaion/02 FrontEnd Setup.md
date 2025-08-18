@@ -15,6 +15,7 @@ alias (@/*): No
 cd frontend-next-app/
 npm install bootstrap react-bootstrap @fortawesome/fontawesome-free
 npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+npm install bootstrap@5.3.3 @popperjs/core
 ```  
 check installation with each command (seperately for less confusion)  
 ```bash
@@ -24,6 +25,7 @@ npm list @fortawesome/fontawesome-free
 npm list @fortawesome/fontawesome-svg-core
 npm list @fortawesome/free-solid-svg-icons
 npm list @fortawesome/react-fontawesome
+npm list bootstrap@5.3.3 @popperjs/core
 ```  
 ## 3. Clean app template  
 App\frontend-next-app\src\app\page.tsx

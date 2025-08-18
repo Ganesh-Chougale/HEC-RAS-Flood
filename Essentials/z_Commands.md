@@ -5,7 +5,10 @@ node Essentials/FileAndFolderSummary.js "App"
 node Essentials/CodeSummary.js "App"
 ```  
 ```bash
+node Essentials/CodeSummary.js "App\frontend-next-app"
+```  
+```bash
 git add .
-git commit -m "Step 7: Database Models & Alert Trigger Placeholder"
+git commit -m "Step 9: Create Core Pages"
 git push origin main
 ```  

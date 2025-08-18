@@ -44,6 +44,7 @@
     │   └── window.svg
     ├── README.md
     ├── src/
-    │   └── app/
+    │   ├── app/
+    │   └── components/
     └── tsconfig.json
 ```
