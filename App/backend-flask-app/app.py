@@ -99,6 +99,7 @@ def download_csv():
 
     try:
         dss_path = "/Panchganga/Rajaram Bridge/FLOW/01Jan2021/1Day/Observed Discharge/"
+
         extracted_data = read_dss_data(last_dss_file_path, dss_path)
 
         if not extracted_data:
@@ -143,6 +144,32 @@ def trigger_placeholder_alert():
     except Exception as e:
         db.session.rollback()
         return jsonify({'error': f'Failed to trigger placeholder alert: {str(e)}'}), 500
+
+@app.route('/api/get-dss-data', methods=['GET'])
+def get_dss_data():
+    """
+    Retrieves and returns the extracted data from the last processed DSS file.
+    """
+    global last_dss_file_path
+
+    if not last_dss_file_path or not os.path.exists(last_dss_file_path):
+        return jsonify({'error': 'No DSS file has been processed yet.'}), 404
+
+    try:
+        dss_path = "/Panchganga/Rajaram Bridge/FLOW/01Jan2021/1Day/Observed Discharge/"
+
+        extracted_data = read_dss_data(last_dss_file_path, dss_path)
+
+        if not extracted_data:
+            return jsonify({'error': 'Failed to re-process data for the chart.'}), 500
+
+        return jsonify({
+            'message': 'Data retrieved successfully!',
+            'data': extracted_data
+        }), 200
+    except Exception as e:
+        return jsonify({'error': f'An internal server error occurred: {str(e)}'}), 500
+
 
 if __name__ == '__main__':
     # Add a context manager to the app for database operations outside of requests

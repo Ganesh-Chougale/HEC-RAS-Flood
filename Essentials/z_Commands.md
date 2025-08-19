@@ -9,6 +9,6 @@ node Essentials/CodeSummary.js "App\frontend-next-app"
 ```  
 ```bash
 git add .
-git commit -m "Step 9.1: Show Exctracted Data at upload page"
+git commit -m "Step 10: Data Visualization Component"
 git push origin main
 ```  
